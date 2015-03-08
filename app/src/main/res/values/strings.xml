@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">きょうのにっき</string>
+    <string name="hello_world">きょうのにっき</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="consumer_key">c9RVsOzFGsmbtWcbFT687WreQ</string>
+    <string name="consumer_secret">0yBFN6KNaomjsg7jpoE1v35XSbp5BcoapkxLNlmlFN3tyOxUBB</string>
+
+    <string-array name="tugikakukoto">
+        <item>（てんきは…）</item>
+        <item>（いつだっけ…）</item>
+        <item>（どこだっけ…）</item>
+        <item>（だれだっけ…）</item>
+        <item>（なにしたっけ…）</item>
+        <item>（どうしたんだっけ…）</item>
+        <item>（こんなかんじかな）</item>
+        <item>（できた！）</item>
+    </string-array>
+
+    <string-array name="tenki">
+        <item>晴れ</item>
+        <item>かいせい</item>
+        <item>くもり</item>
+        <item>雨</item>
+        <item>ゆき</item>
+        <item>ふぶき</item>
+        <item>たいふう</item>
+        <item>みぞれ</item>
+        <item>のうむ</item>
+        <item>さじんあらし</item>
+        <item>えんむ</item>
+        <item>もうふぶき</item>
+        <item>きつねのよめいり</item>
+        <item>こがらし</item>
+        <item>かみなり</item>
+        <item>豆</item>
+    </string-array>
+
+    <string-array name="itu">
+        <item>あさ、</item>
+        <item>ひづけがかわるしゅんかん、</item>
+        <item>ある日、</item>
+        <item>まよなかに、</item>
+        <item>きのう、</item>
+        <item>ごぜん、</item>
+        <item>ごご、</item>
+        <item>１３～１６時に</item>
+        <item>ゴールデンタイムに</item>
+        <item>お昼ごろに、</item>
+        <item>ゆうがた、</item>
+        <item>ひるね中、</item>
+        <item>本日未明、</item>
+        <item>あさごはんのとき、</item>
+        <item>よる、</item>
+        <item>へんなじかんに、</item>
+    </string-array>
+
+    <string-array name="doko">
+        <item>リビングで</item>
+        <item>ゴーストタウンで</item>
+        <item>アトリエで</item>
+        <item>だがしやで</item>
+        <item>ブルジュハリファで</item>
+        <item>かそうくうかんで</item>
+        <item>ゆうえんちで</item>
+        <item>めいろで</item>
+        <item>ひみつきちで</item>
+        <item>けんもんじょで</item>
+        <item>ごみしょりじょうで</item>
+        <item>プールで</item>
+        <item>けんこうランドで</item>
+        <item>海で</item>
+        <item>おんせんで</item>
+        <item>やきにくやで</item>
+        <item>ブラジルで</item>
+        <item>ふじ山で</item>
+        <item>きんじょの森で</item>
+        <item>じぶんのへやで</item>
+        <item>むじんとうで</item>
+        <item>びょういんで</item>
+        <item>こうえんで</item>
+        <item>さくらんぼのうえんで</item>
+        <item>でぱーとで</item>
+        <item>がっこうで</item>
+        <item>ぎんざのばーで</item>
+        <item>けいむしょで</item>
+        <item>田んぼで</item>
+        <item>上野で</item>
+        <item>すかいつりーで</item>
+        <item>ジンバブエで</item>
+    </string-array>
+
+    <string-array name="dare">
+        <item>じゃがいもみたいな人と</item>
+        <item>ややこしい立場の人と</item>
+        <item>先生と</item>
+        <item>豆マニアと</item>
+        <item>カウボーイのたいぐんが</item>
+        <item>おとうさんと</item>
+        <item>かせいじんと</item>
+        <item>だれということもなく</item>
+        <item>軍師と</item>
+        <item>シャガールと</item>
+        <item>ボスと</item>
+        <item>犬と</item>
+        <item>きょにゅうあいどると</item>
+        <item>イエスマンと</item>
+        <item>ひとりで</item>
+        <item>プロやきゅうせんしゅと</item>
+        <item>おかあさんと</item>
+        <item>おとうとと</item>
+        <item>にんじゃと</item>
+        <item>パン粉まみれのおぼうさんと</item>
+        <item>おかねもちと</item>
+        <item>ちゅうがくせいのおねえちゃんと</item>
+        <item>交つうせいりの人と</item>
+        <item>かすたまーさーびすと</item>
+        <item>「もうだめだ」がくちぐせのおじさんと</item>
+        <item>マグロと</item>
+        <item>さいばんちょうと</item>
+        <item>おじいちゃんと</item>
+        <item>アルバイトみならいと</item>
+        <item>せんちょうと</item>
+    </string-array>
+
+    <string-array name="donna">
+        <item>鉄の</item>
+        <item>ぐんじょう色の</item>
+        <item>たいりょうの</item>
+        <item>あいしゅうただよう</item>
+        <item>本格派の</item>
+        <item>つねにかいてんしている</item>
+        <item>甘いにおいの</item>
+        <item>せんぞだいだいの</item>
+        <item>おとうさんの</item>
+        <item>もも色の</item>
+        <item>Ｔシャツみたいな</item>
+        <item>うすくてじょうぶな</item>
+        <item>ぺらぺらの</item>
+        <item>こおった</item>
+        <item>けむりがでている</item>
+        <item>あつあつの</item>
+        <item>みたことのない</item>
+        <item>べとべとした</item>
+        <item>まっきいろの</item>
+        <item>どうもうな</item>
+        <item>よく手入れしてある</item>
+        <item>すこしえがおの</item>
+        <item>おきにいりの</item>
+        <item>いんたーねっと上の</item>
+        <item>はんぶんになった</item>
+        <item>のびたりちぢんだりする</item>
+        <item>めざわりな</item>
+        <item>邪念に満ちた</item>
+        <item>おおきくてくろい</item>
+        <item>けいしきじょうの</item>
+        <item>なまぐさい</item>
+    </string-array>
+
+    <string-array name="nani">
+        <item>じゃがいもを</item>
+        <item>船を</item>
+        <item>にほんにんぎょうを</item>
+        <item>アーティファクトを</item>
+        <item>ばくだんを</item>
+        <item>おかあさんのへそくりを</item>
+        <item>チョコレートを</item>
+        <item>はんばーがーを</item>
+        <item>えんぴつを</item>
+        <item>てれびを</item>
+        <item>りゅうせいぐんを</item>
+        <item>ロボットを</item>
+        <item>えほんを</item>
+        <item>けがにんを</item>
+        <item>ふうぜんのともしびを</item>
+        <item>あかいいろをしたきつねを</item>
+        <item>みどりいろのたぬきを</item>
+        <item>ブタを</item>
+        <item>よごれを</item>
+        <item>やくたたずを</item>
+        <item>ぼうを</item>
+        <item>なにかを</item>
+        <item>きおくを</item>
+        <item>石炭を</item>
+        <item>ゾウを</item>
+        <item>ちゃんぽんめんを</item>
+        <item>カレーを</item>
+        <item>しゃっきんを</item>
+        <item>おたがいを</item>
+        <item>くつしたを</item>
+        <item>ウニとイクラを</item>
+        <item>ごりらを</item>
+        <item>ふやけた肉まんを</item>
+    </string-array>
+
+    <string-array name="dousita">
+        <item>絞めました。</item>
+        <item>あぶら絵にしました</item>
+        <item>わさびじょうゆに漬けました</item>
+        <item>となりにおきました</item>
+        <item>絞りました。</item>
+        <item>とばしました。</item>
+        <item>消しました。</item>
+        <item>見ました。</item>
+        <item>あらいました。</item>
+        <item>たべました。</item>
+        <item>とびこえました。</item>
+        <item>しらべました。</item>
+        <item>ふういんしました。</item>
+        <item>クレープ状にしました。</item>
+        <item>つくりました。</item>
+        <item>うめました。</item>
+        <item>わりました。</item>
+        <item>萌やしました。</item>
+        <item>臼でごりごりしました。</item>
+        <item>とおくから見ました。</item>
+        <item>にこみました。</item>
+        <item>うごかしました。</item>
+        <item>ひっぱりました。</item>
+        <item>箱につめました。</item>
+        <item>ゆっくりねかせました。</item>
+    </string-array>
+
+    <string-array name="matome">
+        <item>じごくでした</item>
+        <item>さんぽういちりょうぞんでござる</item>
+        <item>まさにうぃんうぃんのかんけいです</item>
+        <item>ふにおちない</item>
+        <item>ただただ、時が解決するのを待つばかりです</item>
+        <item>たのしかったです</item>
+        <item>もうにどとやりたくないです</item>
+        <item>しゅぎょうがたりないとおもいました</item>
+        <item>こういうのはやめたほうがいいとおもいました</item>
+        <item>あしたがたのしみです</item>
+        <item>さっぱりしました</item>
+        <item>おかあさんにおこられました</item>
+        <item>これがじんせいだなとおもいました</item>
+        <item>もっとつづけばいいのになあとおもいました</item>
+        <item>ずるいぞふとし君</item>
+        <item>あれはなんだったんだろう</item>
+        <item>ゆめかとおもいました</item>
+        <item>うそです</item>
+        <item>はやると思います</item>
+        <item>すごくつかれました</item>
+        <item>まわりがざわめいてました</item>
+        <item>びっくりです</item>
+        <item>大豆があれば大丈夫！</item>
+        <item>ぐあいがわるいです</item>
+        <item>にがにがしい</item>
+    </string-array>
+
+</resources>
