@@ -62,6 +62,7 @@
         <item>ゴーストタウンで</item>
         <item>アトリエで</item>
         <item>だがしやで</item>
+        <item>竹林で</item>
         <item>ブルジュハリファで</item>
         <item>かそうくうかんで</item>
         <item>ゆうえんちで</item>
@@ -90,6 +91,7 @@
         <item>上野で</item>
         <item>すかいつりーで</item>
         <item>ジンバブエで</item>
+        <item>かぶぬしそうかいで</item>
     </string-array>
 
     <string-array name="dare">
@@ -105,6 +107,7 @@
         <item>シャガールと</item>
         <item>ボスと</item>
         <item>犬と</item>
+        <item>かぐやひめと</item>
         <item>きょにゅうあいどると</item>
         <item>イエスマンと</item>
         <item>ひとりで</item>
@@ -123,6 +126,7 @@
         <item>おじいちゃんと</item>
         <item>アルバイトみならいと</item>
         <item>せんちょうと</item>
+        <item>カレーのおうじさまと</item>
     </string-array>
 
     <string-array name="donna">
@@ -145,6 +149,7 @@
         <item>みたことのない</item>
         <item>べとべとした</item>
         <item>まっきいろの</item>
+        <item>ひかりかがやく</item>
         <item>どうもうな</item>
         <item>よく手入れしてある</item>
         <item>すこしえがおの</item>
@@ -157,6 +162,7 @@
         <item>おおきくてくろい</item>
         <item>けいしきじょうの</item>
         <item>なまぐさい</item>
+        <item>とんこつ風味の</item>
     </string-array>
 
     <string-array name="nani">
@@ -246,6 +252,7 @@
         <item>すごくつかれました</item>
         <item>まわりがざわめいてました</item>
         <item>びっくりです</item>
+        <item>ねつがでました</item>
         <item>大豆があれば大丈夫！</item>
         <item>ぐあいがわるいです</item>
         <item>にがにがしい</item>

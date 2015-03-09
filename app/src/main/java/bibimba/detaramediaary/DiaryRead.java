@@ -72,57 +72,72 @@ public class DiaryRead extends ActionBarActivity{
 
     private void doTweet() {
 
-        // 改行を文字列に含める
-        StringBuffer str = new StringBuffer();
-        str.append("#でたらめにっき");
-        // プラットフォームに適した改行コードを取得\
-        str.append(System.getProperty("line.separator"));
 
-        TextView txt;
+        /* ConnectivityManagerの取得 */
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
 
-        txt = (TextView)findViewById(R.id.textnengappi);
-        str.append(txt.getText());
+        NetworkInfo nInfo = cm.getActiveNetworkInfo();
+        if (nInfo == null) {
 
-        txt = (TextView)findViewById(R.id.textyoubi);
-        str.append(txt.getText());
-        str.append(System.getProperty("line.separator"));
+            showShortToast("いんたーねっとがみつからないです");
+            return;
+        }
 
-        txt = (TextView)findViewById(R.id.texttenki);
-        str.append(txt.getText());
-        str.append(System.getProperty("line.separator"));
+        if (nInfo.isConnected()) {
+            // 改行を文字列に含める
+            StringBuffer str = new StringBuffer();
+            str.append("#でたらめにっき");
+            // プラットフォームに適した改行コードを取得\
+            str.append(System.getProperty("line.separator"));
 
-        txt = (TextView)findViewById(R.id.textitu);
-        str.append(txt.getText());
-        str.append(System.getProperty("line.separator"));
+            TextView txt;
 
-        txt = (TextView)findViewById(R.id.textdoko);
-        str.append(txt.getText());
-        str.append(System.getProperty("line.separator"));
+            txt = (TextView)findViewById(R.id.textnengappi);
+            str.append(txt.getText());
 
-        txt = (TextView)findViewById(R.id.textdare);
-        str.append(txt.getText());
-        str.append(System.getProperty("line.separator"));
+            txt = (TextView)findViewById(R.id.textyoubi);
+            str.append(txt.getText());
+            str.append(System.getProperty("line.separator"));
 
-        txt = (TextView)findViewById(R.id.textdonna);
-        str.append(txt.getText());
-        str.append(System.getProperty("line.separator"));
+            txt = (TextView)findViewById(R.id.texttenki);
+            str.append(txt.getText());
+            str.append(System.getProperty("line.separator"));
 
-        txt = (TextView)findViewById(R.id.textnani);
-        str.append(txt.getText());
-        str.append(System.getProperty("line.separator"));
+            txt = (TextView)findViewById(R.id.textitu);
+            str.append(txt.getText());
+            str.append(System.getProperty("line.separator"));
 
-        txt = (TextView)findViewById(R.id.textdousita);
-        str.append(txt.getText());
-        str.append(System.getProperty("line.separator"));
+            txt = (TextView)findViewById(R.id.textdoko);
+            str.append(txt.getText());
+            str.append(System.getProperty("line.separator"));
 
-        txt = (TextView)findViewById(R.id.textmatome);
-        str.append(txt.getText());
-        str.append(System.getProperty("line.separator"));
+            txt = (TextView)findViewById(R.id.textdare);
+            str.append(txt.getText());
+            str.append(System.getProperty("line.separator"));
 
-        String tweet = str.toString();
+            txt = (TextView)findViewById(R.id.textdonna);
+            str.append(txt.getText());
+            str.append(System.getProperty("line.separator"));
 
-        new TweetTask().execute(tweet);
+            txt = (TextView)findViewById(R.id.textnani);
+            str.append(txt.getText());
+            str.append(System.getProperty("line.separator"));
 
+            txt = (TextView)findViewById(R.id.textdousita);
+            str.append(txt.getText());
+            str.append(System.getProperty("line.separator"));
+
+            txt = (TextView)findViewById(R.id.textmatome);
+            str.append(txt.getText());
+            str.append(System.getProperty("line.separator"));
+
+            String tweet = str.toString();
+
+            new TweetTask().execute(tweet);
+        } else {
+            showShortToast("ねっとわーくせつぞくをしてください");
+            return;
+        }
 
     }
 
