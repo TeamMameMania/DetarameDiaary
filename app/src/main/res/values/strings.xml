@@ -73,6 +73,7 @@
         <item>プールで</item>
         <item>けんこうランドで</item>
         <item>海で</item>
+        <item>WindowsXPかべがみのあのそうげんで</item>
         <item>おんせんで</item>
         <item>やきにくやで</item>
         <item>ブラジルで</item>
@@ -82,8 +83,10 @@
         <item>むじんとうで</item>
         <item>びょういんで</item>
         <item>こうえんで</item>
+        <item>こうじげんばで</item>
         <item>さくらんぼのうえんで</item>
         <item>でぱーとで</item>
+        <item>かくしとりでで</item>
         <item>がっこうで</item>
         <item>ぎんざのばーで</item>
         <item>けいむしょで</item>
@@ -109,12 +112,15 @@
         <item>犬と</item>
         <item>かぐやひめと</item>
         <item>きょにゅうあいどると</item>
-        <item>イエスマンと</item>
+        <item>しんはんにんと</item>
         <item>ひとりで</item>
         <item>プロやきゅうせんしゅと</item>
         <item>おかあさんと</item>
         <item>おとうとと</item>
         <item>にんじゃと</item>
+        <item>ゆうしゃっぽいかっこうのおじさんと</item>
+        <item>白目をむいてるけどげんきな人と</item>
+        <item>がんめんそうはくなおにいちゃんと</item>
         <item>パン粉まみれのおぼうさんと</item>
         <item>おかねもちと</item>
         <item>ちゅうがくせいのおねえちゃんと</item>
@@ -126,6 +132,7 @@
         <item>おじいちゃんと</item>
         <item>アルバイトみならいと</item>
         <item>せんちょうと</item>
+        <item>ごにんたいほのプロと</item>
         <item>カレーのおうじさまと</item>
     </string-array>
 
@@ -151,6 +158,7 @@
         <item>まっきいろの</item>
         <item>ひかりかがやく</item>
         <item>どうもうな</item>
+        <item>きょだいな</item>
         <item>よく手入れしてある</item>
         <item>すこしえがおの</item>
         <item>おきにいりの</item>
@@ -198,6 +206,8 @@
         <item>くつしたを</item>
         <item>ウニとイクラを</item>
         <item>ごりらを</item>
+        <item>しょかつこうめいを</item>
+        <item>勇気を</item>
         <item>ふやけた肉まんを</item>
     </string-array>
 

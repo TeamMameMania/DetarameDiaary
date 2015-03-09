@@ -27,7 +27,7 @@ public class DiaryView extends SurfaceView implements SurfaceHolder.Callback{
     static SQLiteDatabase diarydb;
     private final String TBL_NAME = "detaramediary";
 
-    private static final long waitt = 15;
+    private static final long waitt = 20;
     private Textdataread dtrd;
     private int susumiguai = 0;
     private String txtnengappi;
@@ -49,6 +49,9 @@ public class DiaryView extends SurfaceView implements SurfaceHolder.Callback{
 
     private int w;
     private int h;
+
+    private boolean isWaitnext;
+    private int stoprotatecount;
 
     private final Handler handler;
 
@@ -376,18 +379,48 @@ public class DiaryView extends SurfaceView implements SurfaceHolder.Callback{
 */
         drawtextbitmap2(canvas);
 
-        if (susumiguai <=  MAX_KAKUKOTO) {
-            if (rotationcount >= kakukotolistsize[susumiguai]) {
+        //今の回転が止まるのを待っている最中
+        if (isWaitnext) {
+            if ( rotationcount == stoprotatecount) {
+                //画面をタッチした時点のポインタを保持
+                if (rotationcount >= kakukotolistsize[susumiguai]) {
+                    rotationcount = 0;
+                }
+                rotatestopcount[susumiguai] = (int)rotationcount;
+                //次の項目にいくのでカウントを0にする
                 rotationcount = 0;
-            }
-            rotationcount = rotationcount + 0.25;
-            //btn.setText(dtrd.kakukotoList.get(susumiguai));
-        }
+                stoprotatecount = 0;
+                susumiguai++;
+                isWaitnext = false;
+            } else {
+                double sa = stoprotatecount - rotationcount;
+                //Log.v("差","差：" + sa);
 
+                 if (sa < 0.1) {
+                    rotationcount = stoprotatecount;
+                 }
+                 else if (sa<= 0.3) {
+                     rotationcount = rotationcount + 0.05;
+                 }
+                else if (sa <= 0.5) {
+                     rotationcount = rotationcount + 0.1;
+                 } else {
+                     rotationcount = rotationcount + 0.15;
+                 }
+            }
+        } else {
+            if (susumiguai <=  MAX_KAKUKOTO) {
+                if (rotationcount >= kakukotolistsize[susumiguai]) {
+                    rotationcount = 0;
+                }
+                rotationcount = rotationcount + 0.25;
+
+            }
+        }
     }
 
     private void drawtextbitmap2(Canvas canvas) {
-        //textbitmaps[susumiguai]
+
 
         if (susumiguai > 0) {
             for (int i = 0; i < susumiguai; i++) {
@@ -422,20 +455,29 @@ public class DiaryView extends SurfaceView implements SurfaceHolder.Callback{
     public boolean onTouchEvent(MotionEvent event) {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                if (susumiguai <= MAX_KAKUKOTO) {
-                    //画面をタッチした時点のポインタを保持
-                    if (rotationcount >= kakukotolistsize[susumiguai]) {
-                        rotationcount = 0;
-                    }
-                    rotatestopcount[susumiguai] = (int)rotationcount;
 
-                    //次の項目にいくのでカウントを0にする
-                    rotationcount = 0;
-                    susumiguai++;
-                    return true;
-                } else {
-                    diaryOver();
+                //今の回転が止まるまでの処理中かどうか
+                if (!isWaitnext) {
+                    if (susumiguai <= MAX_KAKUKOTO) {
+                        isWaitnext = true;
+                        stoprotatecount = (int)rotationcount + 1;
+                        return true;
+
+                        ////画面をタッチした時点のポインタを保持
+                        //if (rotationcount >= kakukotolistsize[susumiguai]) {
+                        //    rotationcount = 0;
+                        //}
+                        //rotatestopcount[susumiguai] = (int)rotationcount;
+                        ////次の項目にいくのでカウントを0にする
+                        //rotationcount = 0;
+                        //susumiguai++;
+                        //return true;
+                    } else {
+                        diaryOver();
+                    }
                 }
+
+
 
         }
         return super.onTouchEvent(event);
